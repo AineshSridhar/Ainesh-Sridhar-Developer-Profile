@@ -38,7 +38,7 @@ const styles = {
   },
   firstSection: {
     minHeight: "100vh",
-    backgroundImage: "/HomeBgImage.jpg",
+    backgroundImage: `url(${process.env.PUBLIC_URL}/HomeBgImage.jpg)`,
     backgroundSize: "1400px",
     backgroundRepeat: "repeat",
     backgroundPosition: "top left",

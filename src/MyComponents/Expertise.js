@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const Expertise = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
-  const expertiseSectionRef = useRef(null); // Create a reference for the section
+  const expertiseSectionRef = useRef(null);
 
   const expertise = [
     { title: "UX Audit" },
@@ -12,17 +12,16 @@ const Expertise = () => {
     { title: "Branding" },
   ];
 
-  // Use IntersectionObserver to trigger animation when section comes into view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(true); // Trigger animation when section is visible
+            setIsVisible(true); 
           }
         });
       },
-      { threshold: 0.2 } // Trigger when 20% of the section is visible
+      { threshold: 0.2 } 
     );
 
     if (expertiseSectionRef.current) {
@@ -41,7 +40,7 @@ const Expertise = () => {
       ref={expertiseSectionRef}
       style={{
         ...styles.expertiseSection,
-        ...(isVisible ? styles.fadeIn : {}), // Apply animation when visible
+        ...(isVisible ? styles.fadeIn : {}), 
       }}
     >
       <h2 style={styles.title}>My Expertise</h2>
@@ -69,7 +68,7 @@ const Expertise = () => {
           {expertise[2].title}
         </div>
         <div style={styles.centerImage}>
-          <img src="/developer.avif" alt="My Expertise" style={styles.image} />
+          <img src={`${process.env.PUBLIC_URL}/developer.avif`} alt="My Expertise" style={styles.image} />
         </div>
         <div
           style={{
@@ -103,13 +102,13 @@ const styles = {
     color: '#e8a410',
     padding: '0 50px 50px',
     textAlign: 'center',
-    opacity: 0, // Start hidden
-    transform: 'translateY(20px)', // Start slightly below the viewport
-    transition: 'opacity 0.7s ease, transform 0.7s ease', // Smooth transition effect
+    opacity: 0,
+    transform: 'translateY(20px)',
+    transition: 'opacity 0.7s ease, transform 0.7s ease',
   },
   fadeIn: {
-    opacity: 1, // Fully visible
-    transform: 'translateY(0)', // No translation when visible
+    opacity: 1,
+    transform: 'translateY(0)',
   },
   title: {
     fontFamily: 'Playfair Display, serif',
@@ -126,7 +125,7 @@ const styles = {
     alignItems: 'center',
   },
   card: {
-    backgroundImage: "/Bkg.jpg",
+    backgroundImage: `url(${process.env.PUBLIC_URL}//Bkg.jpg)`,
     borderRadius: '10px',
     color: '#18f1f5',
     padding: '140px 10px',
@@ -161,8 +160,8 @@ const styles = {
     right: '0',
   },
   cardHover: {
-    transform: 'scale(1.1)', // Scale effect on hover
-    boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)', // Add shadow
+    transform: 'scale(1.1)',
+    boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)',
   },
   centerImage: {
     position: 'absolute',

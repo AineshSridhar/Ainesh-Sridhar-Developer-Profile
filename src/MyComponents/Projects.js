@@ -3,20 +3,19 @@ import React, {useState} from 'react'
 const projects = [
     {
       title: "Crowdfunding Website",
-      image: "/Crowdfunding.png", // Update with actual image paths
+      image: `url(${process.env.PUBLIC_URL}/Crowdfunding.png)`, 
       description: "Website created for funding community-welfare based projects. Made use of HTML/CSS/JS, PHP, mySQL along with ajax and jQuery",
     },
     {
       title: "Application of machine learning models to predict probability of various chronic diseases",
-      image: "/DSNProject.png",
+      image: `url(${process.env.PUBLIC_URL}/DSNProject.png)`,
       description: "Focuses on identification of chronic diseases (diabetes and cardiovascular diseases) using machine learning models. Achieved ~97% accuracy.",
     },
     {
       title: "Project 3",
-      image: "/RaggingFrontend.png",
+      image: `url(${process.env.PUBLIC_URL}/RaggingFrontend.png)`,
       description: "Description of Project 3",
     },
-    // Add more projects as needed
   ];
 
 const Projects = () => {

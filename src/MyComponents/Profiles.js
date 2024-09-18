@@ -8,7 +8,7 @@ const Profiles = () => {
 
         {/* LinkedIn Profile */}
         <a href="https://www.linkedin.com/in/ainesh-sridhar-17bb39251" style={{ ...styles.profileCard, ...styles.leftCard }}>
-          <img src="/linkedin.png" alt="LinkedIn" style={styles.profileLogo} />
+          <img src={`${process.env.PUBLIC_URL}/linkedin.png`} alt="LinkedIn" style={styles.profileLogo} />
           <div style={styles.desc}>
             <p>Experience and achievements in detail</p>
           </div>
@@ -16,13 +16,13 @@ const Profiles = () => {
 
         {/* LeetCode Profile */}
         <a href="https://www.leetcode.com/u/aineshsridhar" style={{ ...styles.profileCard, ...styles.middleCard }}>
-          <img src="/leetcode.png" alt="LeetCode" style={styles.profileLogo} />
+          <img src={`${process.env.PUBLIC_URL}/leetcode.png`} alt="LeetCode" style={styles.profileLogo} />
           <p style={styles.profileDesc}>Solved 150+ DSA questions</p>
         </a>
 
         {/* GeeksForGeeks Profile */}
         <a href="https://www.geeksforgeeks.org/user/aineshs16jk/" style={{ ...styles.profileCard, ...styles.rightCard }}>
-          <img src="/geeksforgeeks.png" alt="GeeksForGeeks" style={styles.profileLogo} />
+          <img src={`${process.env.PUBLIC_URL}/geeksforgeeks.png`} alt="GeeksForGeeks" style={styles.profileLogo} />
           <div style={styles.desc}>
             <p>Actively solving DSA problems on GFG</p>
           </div>
