@@ -3,17 +3,17 @@ import React, {useState} from 'react'
 const projects = [
     {
       title: "Crowdfunding Website",
-      image: `url(${process.env.PUBLIC_URL}/Crowdfunding.png)`, 
+      image: `${process.env.PUBLIC_URL}/Crowdfunding.png`, 
       description: "Website created for funding community-welfare based projects. Made use of HTML/CSS/JS, PHP, mySQL along with ajax and jQuery",
     },
     {
       title: "Application of machine learning models to predict probability of various chronic diseases",
-      image: `url(${process.env.PUBLIC_URL}/DSNProject.png)`,
+      image: `${process.env.PUBLIC_URL}/DSNProject.png`,
       description: "Focuses on identification of chronic diseases (diabetes and cardiovascular diseases) using machine learning models. Achieved ~97% accuracy.",
     },
     {
       title: "Project 3",
-      image: `url(${process.env.PUBLIC_URL}/RaggingFrontend.png)`,
+      image: `${process.env.PUBLIC_URL}/RaggingFrontend.png`,
       description: "Description of Project 3",
     },
   ];
