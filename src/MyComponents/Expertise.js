@@ -126,7 +126,7 @@ const styles = {
     alignItems: 'center',
   },
   card: {
-    backgroundImage: "url('/Bkg.jpg')",
+    backgroundImage: "/Bkg.jpg",
     borderRadius: '10px',
     color: '#18f1f5',
     padding: '140px 10px',

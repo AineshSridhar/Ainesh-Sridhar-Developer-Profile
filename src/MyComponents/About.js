@@ -40,7 +40,7 @@ const About = () => {
       <div style={styles.info}>
         <animated.div style={{ ...styles.imgContainer, ...slideIn }}>
           <h2 style={styles.imgName}>AINESH SRIDHAR</h2>
-          <img src="url('../../../public/casuals2.png')" alt="AineshSridhar2" style={styles.pic} />
+          <img src="/casuals2.png" alt="AineshSridhar2" style={styles.pic} />
         </animated.div>
         <div style={styles.desc}>
           <p style={styles.brief}>

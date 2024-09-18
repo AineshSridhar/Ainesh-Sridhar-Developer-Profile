@@ -3,7 +3,7 @@ import {FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <navbar style={styles.navbar}>
+    <nav style={styles.navbar}>
       <div style={styles.logo}>Portfolio</div>
       <ul style={styles.navLinks}>
         <li style={styles.navItem}>
@@ -35,7 +35,7 @@ export default function Navbar() {
           <FaInstagram />
         </a>
       </div>
-    </navbar>
+    </nav>
   );
 }
 
