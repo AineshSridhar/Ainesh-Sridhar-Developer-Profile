@@ -10,7 +10,7 @@ export default function Header() {
         <h4 style={styles.softwareEngineer}>Software Engineer</h4>
       </div>
       <div style={styles.headerImgSection}>
-        <img src="/download4.png" alt="SamplePhoto" style={styles.headerImg} />
+        <img src={`${process.env.PUBLIC_URL}/download4.png`} alt="Image" style={styles.headerImg} />
       </div>
     </div>
   )
