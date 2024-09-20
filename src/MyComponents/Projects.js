@@ -7,14 +7,14 @@ const projects = [
       description: "Website created for funding community-welfare based projects. Made use of HTML/CSS/JS, PHP, mySQL along with ajax and jQuery",
     },
     {
-      title: "Application of machine learning models to predict probability of various chronic diseases",
+      title: "ML Models for chronic diseases prediction",
       image: `${process.env.PUBLIC_URL}/DSNProject.png`,
-      description: "Focuses on identification of chronic diseases (diabetes and cardiovascular diseases) using machine learning models. Achieved ~97% accuracy.",
+      description: "Application of machine learning models to predict probability of various chronic diseases. Focuses on identification of chronic diseases (diabetes and cardiovascular diseases) using machine learning models. Achieved ~97% accuracy.",
     },
     {
-      title: "Project 3",
+      title: "Anti-Ragging Awareness Website",
       image: `${process.env.PUBLIC_URL}/RaggingFrontend.png`,
-      description: "Description of Project 3",
+      description: "Created as part of a front-end competition within 1.5 hours on the occasion of ragging awareness. Showcases efficient time management and proficiency in web development tech stacks",
     },
   ];
 
@@ -34,6 +34,7 @@ const Projects = () => {
     };
 
     return (
+        <section id="projects">
         <div>
             <h3 style={styles.heading}>Explore My Recent Projects</h3>
             <div style={styles.container}>
@@ -67,6 +68,7 @@ const Projects = () => {
             <button onClick={handleNext} style={styles.arrowButton}>{">"}</button>
             </div>
         </div>
+        </section>
     );
 };
 
@@ -100,6 +102,7 @@ const styles = {
     project: {
         width: "600px",
         textAlign: "center",
+        marginBottom:"30px",
     },
     image: {
         maxWidth: "100%",
@@ -108,12 +111,15 @@ const styles = {
         borderRadius: "10px",
     },
     title: {
-        margin: "10px 0",
+        margin: "30px auto",
         fontSize: "24px",
-        color: "#18f1f5"
+        color: "#18f1f5",
+        width:"550px",
     },
     description: {
         fontSize: "16px",
         color: "#fff",
+        width:"500px",
+        margin:"0 auto",
     },
 };

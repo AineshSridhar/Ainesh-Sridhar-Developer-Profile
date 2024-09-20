@@ -22,20 +22,17 @@ const Skills = () => {
 
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
-  // Fade-in effect
   const fadeIn = useSpring({
     opacity: inView ? 1 : 0,
     transform: inView ? 'translateY(0)' : 'translateY(50px)',
     config: { mass: 1, tension: 210, friction: 100 },
   });
 
-  // Function to randomly swap two elements in the array
   const swapSkills = () => {
     const newSkills = [...skills];
     const index1 = Math.floor(Math.random() * newSkills.length);
     const index2 = Math.floor(Math.random() * newSkills.length);
 
-    // Swap the positions of the two elements
     [newSkills[index1].position, newSkills[index2].position] = [newSkills[index2].position, newSkills[index1].position];
 
     setSkills(newSkills);
@@ -47,6 +44,7 @@ const Skills = () => {
   }, [skills]);
 
   return (
+    <section id="skills">
     <animated.div ref={ref} style={{ ...styles.skillsSection, ...fadeIn }}>
       <h2 style={styles.title}>Skillset</h2>
       <div style={styles.skillsContainer}>
@@ -64,6 +62,7 @@ const Skills = () => {
         ))}
       </div>
     </animated.div>
+    </section>
   );
 };
 

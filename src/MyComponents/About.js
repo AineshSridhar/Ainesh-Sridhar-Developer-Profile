@@ -35,6 +35,7 @@ const About = () => {
   });
 
   return (
+    <section id="about">
     <animated.div ref={ref} style={{ ...styles.aboutSection, ...fadeIn }}>
       <h2 style={styles.title}>About Me</h2>
       <div style={styles.info}>
@@ -66,6 +67,7 @@ const About = () => {
         </div>
       </div>
     </animated.div>
+    </section>
   );
 };
 

@@ -9,6 +9,7 @@ import Projects from "./MyComponents/Projects";
 import Profiles from "./MyComponents/Profiles";
 import Footer from "./MyComponents/Footer";
 import { useSpring, animated } from "react-spring";
+import './App.css';
 
 function App() {
   const fadeInApp = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 200 });

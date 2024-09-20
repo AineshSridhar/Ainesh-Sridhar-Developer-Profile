@@ -2,6 +2,7 @@ import React from 'react';
 
 const Profiles = () => {
   return (
+    <section id="profiles">
     <div style={styles.profiles}>
       <h1 style={styles.title}>My Profiles</h1>
       <div style={styles.profilesContainer}>
@@ -30,6 +31,7 @@ const Profiles = () => {
 
       </div>
     </div>
+    </section>
   );
 };
 

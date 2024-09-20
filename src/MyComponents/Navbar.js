@@ -7,23 +7,23 @@ export default function Navbar() {
       <div style={styles.logo}>Portfolio</div>
       <ul style={styles.navLinks}>
         <li style={styles.navItem}>
-          <a href="/" style={styles.navLink}>
-            Home
-          </a>
-        </li>
-        <li style={styles.navItem}>
-          <a href="/about" style={styles.navLink}>
+          <a href="#about" style={styles.navLink}>
             About
           </a>
         </li>
         <li style={styles.navItem}>
-          <a href="/projects" style={styles.navLink}>
+          <a href="#skills" style={styles.navLink}>
+            Skillset
+          </a>
+        </li>
+        <li style={styles.navItem}>
+          <a href="#projects" style={styles.navLink}>
             Projects
           </a>
         </li>
         <li style={styles.navItem}>
-          <a href="/" style={styles.navLink}>
-            Contact
+          <a href="#profiles" style={styles.navLink}>
+            Profiles
           </a>
         </li>
       </ul>
