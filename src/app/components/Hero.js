@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
       {/* Right: Profile Image with Floating Cards */}
       <div className="flex-1 flex items-center justify-center relative mt-10 md:mt-0">
-        <div className="relative w-120 h-100">
+        <div className="relative w-120 h-120">
           <Image
             src="/Ainesh Sridhar OLD.png"
             alt="Profile"

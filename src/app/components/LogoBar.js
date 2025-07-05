@@ -36,7 +36,7 @@ export default function LogoBar() {
           className="flex items-center gap-2 hover:opacity-80 transition"
         >
           {profile.icon}
-          <span className="text-blue-700 font-medium underline">{profile.name}</span>
+          <span className="font-medium">{profile.name}</span>
         </a>
       ))}
     </div>
