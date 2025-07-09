@@ -1,7 +1,7 @@
 // app/page.js
 import Hero from "./components/Hero";
 import LogoBar from "./components/LogoBar";
-import Features from "./components/Features";
+import Education from "./components/EducationSection";
 import Navbar from "./components/Navbar";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LogoBar />
-      <Features />
+      <Education />
       <SkillsSection />
       <ProjectsSection />
       <CertificatesSection />

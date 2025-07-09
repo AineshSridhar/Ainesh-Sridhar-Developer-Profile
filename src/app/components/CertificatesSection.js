@@ -1,23 +1,23 @@
 // CertificatesSection.js
 const certificates = [
   {
-    name: "Full Stack Web Development",
-    org: "Coursera",
-    date: "May 2024",
+    name: "AWS Solutions Architect",
+    org: "Ethnus",
+    date: "April 2024",
     img: "/placeholder/cert1.jpg",
     link: "#",
   },
   {
     name: "Data Structures & Algorithms",
-    org: "GeeksforGeeks",
-    date: "Jan 2024",
+    org: "IBM Adroit",
+    date: "June 2025",
     img: "/placeholder/cert2.jpg",
     link: "#",
   },
   {
-    name: "React Advanced",
-    org: "Udemy",
-    date: "Dec 2023",
+    name: "Developing Back-End Apps with Node.js and Express",
+    org: "Coursera",
+    date: "Dec 2022",
     img: "/placeholder/cert3.jpg",
     link: "#",
   },
