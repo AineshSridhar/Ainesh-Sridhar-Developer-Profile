@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       <AboutSection/>
       <LogoBar />
-      <Education />
+      {/* <Education /> */}
       <SkillsSection />
       <ProjectsSection />
       <CertificatesSection />
