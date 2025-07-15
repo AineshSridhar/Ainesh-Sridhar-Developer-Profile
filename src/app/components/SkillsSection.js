@@ -63,14 +63,14 @@ const skillCategories = [
 
 export default function SkillsGrid() {
   return (
-    <section className="py-12 px-4 bg-white">
+    <section className="py-12 px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skillCategories.map((cat) => (
           <div
             key={cat.label}
-            className="bg-white rounded-2xl shadow-md border border-slate-100 p-8 flex flex-col items-center text-center"
+            className="bg-[#0F1116] rounded-2xl shadow-md border border-slate-800 p-8 flex flex-col items-center text-center"
           >
-            <h3 className="text-xl font-bold mb-6 text-slate-800">{cat.label}</h3>
+            <h3 className="text-xl font-bold mb-6 text-yellow-400">{cat.label}</h3>
             <div className="flex flex-wrap justify-center gap-5">
               {cat.skills.map((skill) => (
                 <div
@@ -78,7 +78,7 @@ export default function SkillsGrid() {
                   className="flex flex-col items-center gap-1 min-w-[80px]"
                 >
                   <span>{skill.icon}</span>
-                  <span className="text-sm font-medium text-slate-700">{skill.name}</span>
+                  <span className="text-sm font-medium text-yellow-400">{skill.name}</span>
                 </div>
               ))}
             </div>
